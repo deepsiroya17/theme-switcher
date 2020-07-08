@@ -1,0 +1,269 @@
+:root {
+  --bg-color: #FFFFFF;
+  --top-bg-pattern-color: #F5F7FF;
+  --card-bg-color: #F0F2FA;
+  --text-color: #1E202A;
+  --font-color: #858CAD;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1E202A;
+  --top-bg-pattern-color: #1F212E;
+  --card-bg-color: #252A41;
+  --text-color: #FFFFFF;
+  --font-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  color: var(--text-color) ;
+  background-color: var(--bg-color);
+}
+
+/****** HEADING ******/
+.heading {
+  background-color: var(--top-bg-pattern-color);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 200px;
+}
+
+.top-part {
+  margin-left: 110px;
+  padding-top: 45px;
+}
+
+.head-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.head-2 {
+  margin-top: 2px;
+  font-weight: 700;
+  color: #63687E;
+}
+
+/****** TOGGLE BUTTON *******/
+.checkbox {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 110px;
+  top: 65px;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+
+
+.toggle-btn {
+  height: 22px;
+  width: 44px;
+  background: #858CAD;
+  position: relative;
+  margin-left: 12px;
+  margin-top: -2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.toggle-btn:before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 16px;
+  width: 16px;
+  right: 3px;
+  top: 3px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+input[type=checkbox]:checked + .toggle-btn:before {
+  right: 25px;
+  background-color: #2B2E40;
+}
+
+input[type=checkbox]:checked + .toggle-btn{
+  background: linear-gradient(90deg, #378FE6, #3EDA82);
+}
+
+/*************************** SECTION-1 ******************************/
+/****** TOP ROW CARDS ******/
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1300px;
+  margin: -50px auto;
+}
+
+.top-card {
+  background-color: var(--card-bg-color);
+  text-align: center;
+  border-radius: 2%;
+  width: 300px;
+  height: 230px;
+  border-top: 5px solid;
+}
+
+.top-card-head {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.top-card-head-icon {
+  height: 20px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.top-card-head-text {
+  color: #63687E;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.top-card-number {
+  font-size: 3.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.top-card-follow {
+  color: #63687E;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.top-card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.top-card-bottom-icon {
+  height: 4px;
+  margin-top: 21px;
+  margin-right: 5px;
+}
+
+.green-txt {
+  color: #1DB489;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.red-txt {
+  color: #DC414C;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/****** TOP BORDER AND CONTAINERS POSITION ******/
+.facebook {
+  border-top-color: #178FF5;
+}
+
+.twitter {
+  border-top-color: #1DA1F2;
+}
+
+.instagram:before {
+  content: '';
+  width: 300px;
+  height: 5px;
+  left: 666px;
+  top: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: absolute;
+  background-image: linear-gradient(to right, #fdc468 0%, #df4996 100%), linear-gradient(to right, #fdc468 0%, #df4996 100%);
+}
+
+.youtube {
+  border-top-color: #C4032B;
+}
+
+/******************************** SECTION-2 ************************************/
+.head-3 {
+  margin-left: 110px;
+  margin-top: 95px;
+  color: var(--font-color);
+}
+
+.bottom-card {
+  background-color: var(--card-bg-color);
+  border-radius: 2%;
+  width: 300px;
+  height: 130px;
+}
+
+.bottom-card-head {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-card-head-text {
+  margin: 33px 24px 20px 0;
+  color: #63687E;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.bottom-card-head-icon {
+  height: 20px;
+  margin-top: 31px;
+  margin-left: 40px;
+}
+
+.bottom-card-number {
+  display: inline;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-left: 32px;
+}
+
+.bottom-card-footer {
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.bottom-card-footer-icon {
+  height: 4px;
+  margin-top: 21px;
+  margin-right: 5px;
+}
+
+.bottom-container-row-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin: auto;
+}
+
+.bottom-container-row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin: 30px auto;
+}
+
+/****** FOOTER ******/
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: #3E52A3;
+}
